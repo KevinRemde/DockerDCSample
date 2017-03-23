@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "value": "westus"
+    },
+    "ucpControllerCount": {
+      "value": 3
+    },
+    "ucpNodeCount": {
+      "value": 3
+    },
+    "ucpDtrNodeCount": {
+      "value": 3
+    },
+    "dockerAdminUsername": {
+      "value": "kevin"
+    },
+    "dockerAdminPassword": {
+      "value": "Passw0rd!Pass"
+    },
+    "controllerLbPublicIpDnsName": {
+      "value": "karcontroldns"
+    },
+    "nodeLbPublicIpDnsName": {
+      "value": "karucpnodedns"
+    },
+    "nodeDtrLbPublicIpDnsName": {
+      "value": "dtrnodedns"
+    },
+    "ucpLicenseKey": {
+      "value": "https://storebits.docker.com/ee/ubuntu/sub-c3eb9ae5-1440-4622-b8f7-db305c3dca7b"
+    },
+    "ucpAdminPassword": {
+      "value": "GEN-PASSWORD"
+    },
+    "baseUrl": {
+      "value": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/cloudbeesjenkins-dockerdatacenter"
+    }
+  }
+}
